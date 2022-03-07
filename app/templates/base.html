@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        {% if title %}
+        <title> {{title}} - Yutoblog </title>
+        {% else %}
+        <title> Welcome to Yutoblog!</title>
+        {% endif %}
+    </head>
+    <body>
+        <div>Yutoblog: <a href="/index">Home</a></div>
+        <hr>
+        {% block content %}{% endblock %}
+    </body>
+</html>
